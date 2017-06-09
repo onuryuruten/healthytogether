@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/healthytogether" />
+
+        <!--
+         <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_game"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/light_blue" /> -->
+
+
+        <!--
+         <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">        -->
+
+        <RelativeLayout
+            android:id="@+id/task_edit_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/badgebg"
+            android:orientation="vertical"
+            android:padding="10px" >
+
+            <RelativeLayout
+                android:id="@+id/datePanel"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/my_box_border_bottom"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/previousLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="0dp"
+                    android:onClick="showPreviousHistory"
+                    android:src="@drawable/previousicon" />
+
+                <TextView
+                    android:id="@+id/dateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/today"
+                    android:textColor="@color/text_darkgrey"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/nextLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="showLaterHistory"
+                    android:src="@drawable/nexticon_nonclickable" />
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:onClick="onRefreshButtonClicked"
+                    android:src="@drawable/refresh_button_selector"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <TabHost
+                android:id="@+id/edit_item_tab_host"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datePanel" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="60px" >
+
+                    <!-- you need that if you don't want the tab content to overflow -->
+
+                    <LinearLayout
+                        android:id="@+id/show_step_tab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <include
+                            android:id="@+id/step_progress"
+                            layout="@layout/activity_progress" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/show_floor_tab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <include
+                            android:id="@+id/stair_progress"
+                            layout="@layout/activity_progress_floors" />
+                    </LinearLayout>
+                </FrameLayout>
+            </TabHost>
+        </RelativeLayout>
+
+        <!-- </RelativeLayout> -->
+
+
+        <!-- My Logs -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/badgebg"
+            android:padding="5dp" >
+
+            <!--
+             <ImageView
+            android:id="@+id/badges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/textViewCheer"
+            android:background="@android:color/transparent"
+            android:src="@drawable/badge" />           -->
+
+            <LinearLayout
+                android:id="@+id/mylogParentcontainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/your_log"
+                    android:textColor="@color/text_darkgrey"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/mylogcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/moodContainter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/moodButton"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:onClick="onMoodButtonClicked"
+                            android:padding="2dp"
+                            android:src="@drawable/mood"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/textMoodLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/moodButton"
+                            android:layout_centerHorizontal="true"
+                            android:singleLine="true"
+                            android:text="@string/mood"
+                            android:textColor="@color/text_lightgrey"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/socialContainter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/socialButton"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:onClick="onSocialButtonClicked"
+                            android:padding="2dp"
+                            android:src="@drawable/social"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/textSocialLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/socialButton"
+                            android:layout_centerHorizontal="true"
+                            android:singleLine="true"
+                            android:text="@string/social"
+                            android:textColor="@color/text_lightgrey"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nutritionContainter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/nutritionButton"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:onClick="onNutritionButtonClicked"
+                            android:padding="2dp"
+                            android:src="@drawable/food"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/textNutritionLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/nutritionButton"
+                            android:layout_centerHorizontal="true"
+                            android:singleLine="true"
+                            android:text="@string/food"
+                            android:textColor="@color/text_lightgrey"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/exerciseContainter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/exerciseButton"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:onClick="onExerciseButtonClicked"
+                            android:padding="2dp"
+                            android:src="@drawable/exercise"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/textExerciseLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/exerciseButton"
+                            android:layout_centerHorizontal="true"
+                            android:singleLine="true"
+                            android:text="@string/activity"
+                            android:textColor="@color/text_lightgrey"
+                            android:textSize="10dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mylogcontainer2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mylogcontainer"
+                    android:layout_marginTop="3dp"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/historyButton"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="20dp"
+                        android:onClick="onHistoryButtonClicked"
+                        android:padding="2dp"
+                        android:src="@drawable/historybutton"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/textHistoryLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/historyButton"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/history"
+                        android:textColor="@color/text_lightgrey"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/historyButtonf"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/textHistoryLabel"
+                        android:padding="2dp"
+                        android:src="@drawable/historybutton"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/historyButtonf2"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/historyButtonf"
+                        android:padding="2dp"
+                        android:src="@drawable/historybutton"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/historyButtonf3"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_toLeftOf="@id/historyButtonf2"
+                        android:padding="2dp"
+                        android:src="@drawable/historybutton"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/confirmButton"
+                        android:layout_width="55dp"
+                        android:layout_height="37dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toLeftOf="@id/historyButtonf3"
+                        android:background="@drawable/logbuttonbg"
+                        android:gravity="right"
+                        android:onClick="onLogConfirmButtonClicked"
+                        android:padding="10dp"
+                        android:visibility="visible" />
+
+                    <!-- android:visibility="visible" -->
+                    <!--
+                <TextView
+                android:id="@+id/textConfirmLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/confirmButton"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:text="Log it!"
+                android:textColor="@color/text_lightgrey"
+                android:textSize="10dp"
+                android:textStyle="bold" />           -->
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- My badges -->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

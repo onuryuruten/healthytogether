@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/leaderboard_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewOtherSteps"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text=""
+                android:textColor="@color/text_darkgrey"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/leaderboard"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp" >
+            </ListView>
+<!-- android:layout_height="320dp"  -->
+ 
+<!-- ASMA START HOME BUTTON -->
+            <LinearLayout
+                android:id="@+id/GoHomeBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingTop="15px"
+                android:layout_below="@+id/leaderboard"
+                android:layout_centerHorizontal="true" >
+	<!-- android:layout_below="@+id/leaderboard" -->            
+	<!-- android:layout_height="wrap_content" -->
+            
+                
+
+                <ImageButton
+                    android:id="@+id/imageButtonGroup"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/textViewGroup"
+                    android:background="@android:color/transparent"
+                    android:onClick="onGroupButtonClicked"
+                    android:src="@drawable/group_button_selector" />
+
+                <TextView
+                    android:id="@+id/textViewGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/imageButtonGroup"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/goto_Group"
+                    android:textColor="@color/text_lightgrey"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+                
+                    
+                <ImageButton
+                    android:id="@+id/imageButtonRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/textViewRefresh"
+                    android:background="@android:color/transparent"
+                    android:onClick="onRefreshLeaderboardButtonClicked"
+                    android:src="@drawable/refresh_selector" 
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/textViewRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/imageButtonRefresh"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/refresh"
+                    android:textColor="@color/text_lightgrey"
+                    android:textSize="10dp"
+                    android:textStyle="bold" 
+                    android:visibility="invisible"/>
+                
+                <ImageButton
+                    android:id="@+id/imageButtonFace"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toLeftOf="@+id/textViewFace"
+                    android:onClick="onChangeFaceButtonClicked"
+                    android:background="@drawable/avatar0"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:id="@+id/textViewFace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/imageButtonFace"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/change_avatar"
+                    android:textColor="@color/text_lightgrey"
+                    android:textSize="10dp"
+                    android:textStyle="bold" 
+                    android:visibility="invisible"/>
+
+                <!-- ASMA END HOME BUTTON -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

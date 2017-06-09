@@ -1,0 +1,310 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        android:orientation="vertical" >
+
+        <!-- List people progress -->
+
+        <LinearLayout
+            android:id="@+id/list_possible_invitees_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/list_possible_invitees_status_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/update_search_engine"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/invite_form"
+            style="@style/LoginFormContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border"
+            android:orientation="vertical" >
+                
+            
+            
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/invite_a_friend"
+                android:textColor="@color/text_darkgrey"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/darkgrey" />
+
+            <TextView
+                android:id="@+id/inviteTextBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/invite_intro"
+                android:textColor="@color/text_darkgrey" />
+
+            <!-- android:background="@drawable/border" 
+            	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginTop="5dp"-->
+	            
+            
+	            
+			<LinearLayout 
+			    android:id="@+id/suggestion_form"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="vertical">
+	            
+			    <TextView
+		                android:id="@+id/textBudyEmail"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginBottom="5dp"
+		                android:layout_marginTop="5dp"
+		                android:text="@string/our_suggesions"
+		                android:layout_alignParentLeft="true"
+		                android:textColor="@color/text_darkgrey"
+		                android:textStyle="bold" />
+	           <!-- <RelativeLayout
+	                android:id="@+id/sgrl" 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginBottom="5dp"
+		            android:orientation="horizontal">
+					
+						<ImageButton
+		                android:id="@+id/editInvitationIcon"
+						android:layout_width="30dp"
+		                android:layout_height="30dp"
+		                android:layout_marginBottom="5dp"
+		                android:layout_marginTop="3dp"
+		                android:layout_alignParentRight="true"
+		                android:background="@android:color/transparent"
+		                android:src="@android:drawable/ic_menu_edit"
+		                android:onClick="onToggleSuggestionsListClicked"/> 		
+				</RelativeLayout>-->
+		            
+			<!-- <TextView
+                android:id="@+id/textBudyEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/our_suggesions"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/text_darkgrey"
+                android:textStyle="bold" />	  -->          
+			<LinearLayout
+		         android:layout_width="fill_parent"
+		         android:layout_height="150dip">
+					
+			    <!-- android:background="@drawable/border" 
+			    android:divider="#CCCCCC"-->
+			<ListView
+                    android:id="@+id/suggestions_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:background="@android:color/transparent"
+                    android:dividerHeight="2dp" >
+			</ListView>
+			</LinearLayout> <!-- android:background="@android:color/transparent" 
+			android:layout_marginBottom="5dp"--> 			
+			</LinearLayout>
+			
+            <!-- android:id="@+id/specify_buddy_form"
+              android:layout_marginTop="35dp" -->
+            <LinearLayout
+				android:id="@+id/specify_buddy_form"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="vertical">
+			<RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="5dp"
+	            android:orientation="horizontal" > <!--  style="@style/LoginFormContainer" -->
+            <TextView
+                android:id="@+id/textBudyEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:text="@string/invite_buddy_email"
+                android:textColor="@color/text_darkgrey"
+                android:textStyle="bold"
+                />
+			<ImageButton
+                android:id="@+id/editInvitationIcon2"
+				android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_edit"
+                android:onClick="onToggleSuggestionsListClicked"
+                android:visibility="invisible"
+                /> 
+			</RelativeLayout>
+			
+            <!-- <TextView
+                android:id="@+id/textBudyEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:text="@string/invite_buddy_email"
+                android:textColor="@color/text_darkgrey"
+                android:textStyle="bold"
+                /> -->            
+            
+            <AutoCompleteTextView
+                android:id="@+id/friendEmail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/border"
+                android:completionThreshold="1"
+                android:ems="10"
+                android:hint="@string/type_for_email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="3dp"
+                android:textSize="14sp" >
+
+                <!-- android:onClick="onAutoCompleteTVClicked" -->
+                
+                <!-- android:completionHint="Type here for buddy e-mail" -->
+                <!-- android:onClick="onSearchRequested" -->
+
+
+                <!-- <requestFocus /> -->
+            	</AutoCompleteTextView>
+
+				
+            
+			</LinearLayout>
+			
+            <LinearLayout 
+			    android:id="@+id/message_form"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="vertical">
+	            <TextView
+	                android:id="@+id/messagetxt"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="5dp"
+	                android:layout_marginTop="5dp"
+	                android:text="@string/your_message"
+	                android:textColor="@color/text_darkgrey"
+	                android:textStyle="bold" />
+	
+	            <EditText
+	                android:id="@+id/messageinput"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="0.08"
+	                android:background="@drawable/border"
+	                android:ems="10"
+	                android:gravity="top"
+	                android:padding="3dp"
+	                android:text="@string/default_invitation_message"
+	                android:textColor="@color/text_darkgrey"
+	                android:textSize="14sp" >
+	            </EditText>
+	            
+	            
+	           <RelativeLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginBottom="10dp"
+	            android:orientation="horizontal">
+			
+	            <Button
+	                android:id="@+id/cancelInvitationButton"
+	                android:layout_width="130dp"
+	                android:layout_height="38dp"
+	                android:layout_marginTop="20dp"
+	                android:background="@drawable/cancelbutton_gray"
+	                android:text="@string/cancel_invitation"
+	                android:layout_alignParentLeft="true"
+	                android:textColor="@color/white"
+	                android:textStyle="bold"
+	                android:onClick="onCancelNewInvitationButtonClicked" />		
+	                	
+	           <Button
+	                android:id="@+id/invitebtn"
+	                android:layout_width="130dp"
+	                android:layout_height="38dp"
+	                android:layout_marginTop="20dp"
+	                android:background="@drawable/positivebutton"
+	                android:onClick="onInviteButtonClicked"
+	                android:layout_alignParentRight="true"
+	                android:text="@string/invitation_confirm"
+	                android:textColor="@color/white"
+	                android:textStyle="bold" />
+
+	            </RelativeLayout> 
+	            
+			</LinearLayout>	
+            
+            <!--
+           <ImageView android:id="@+id/searchBuddy"
+            		android:background="@drawable/invitation_menu_search"
+            		android:onClick="onSearchRequested"/>           -->
+<!--            <Button
+                android:id="@+id/invitebtn"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/generalbutton"
+                android:onClick="onInviteButtonClicked"
+                android:text="@string/invitation_confirm"
+                android:textColor="@color/white"
+                android:textStyle="bold" />-->  
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bWrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/badgeDayX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/bubble_blue"
+            android:paddingLeft="10dip"
+            android:text="Time"
+            android:textColor="@android:color/primary_text_light"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bbadge1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="3dp"
+            android:padding="2dp"
+            android:src="@drawable/no_badge"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/bbadge2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="3dp"
+            android:padding="2dp"
+            android:src="@drawable/no_badge"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bbadge3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="3dp"
+            android:padding="2dp"
+            android:src="@drawable/no_badge"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bbadge4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="3dp"
+            android:padding="2dp"
+            android:src="@drawable/no_badge"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bWrapper2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/badgeDay2X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/bubble_blue"
+            android:paddingLeft="10dip"
+            android:text="Time"
+            android:textColor="@android:color/primary_text_light"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bbadge5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="3dp"
+            android:padding="2dp"
+            android:src="@drawable/no_badge"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bbadge6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="3dp"
+            android:padding="2dp"
+            android:src="@drawable/no_badge"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bbadge7"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="3dp"
+            android:padding="2dp"
+            android:src="@drawable/no_badge"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bbadge8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:src="@drawable/no_badge"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

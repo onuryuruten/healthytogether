@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/border"
+    android:layout_height="match_parent" >
+<!--  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    tools:context=".Main2Activity" >-->
+    <!--         android:layout_width="match_parent"
+        android:layout_height="match_parent" -->
+    
+    <!--  android:background="@drawable/border" -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+       <!--  <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/healthytogether" /> -->
+
+        <!-- List people progress 
+
+        <LinearLayout
+            android:id="@+id/list_inviters_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/list_people_status_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/retrieving_inviters"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>-->
+
+<!--  style="@style/LoginFormContainer" -->
+<!-- android:background="@drawable/border" -->
+        <LinearLayout
+            android:id="@+id/accept_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:text="@string/game_invitation"
+                android:textColor="@color/text_darkgrey"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/darkgrey" />
+
+            <TextView
+                android:id="@+id/you_have_an_invitation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/you_have_an_invitation"
+                android:textColor="@color/text_darkgrey" />
+
+            <!-- android:layout_gravity="center" -->
+            
+			<ListView
+		        android:id="@+id/listViewBuddyEmail"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="wrap_content"
+		        android:choiceMode="singleChoice"
+		        android:paddingBottom="5dp">
+    		</ListView> 
+ 			<!--  <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >  
+	                       
+            <TextView
+                android:id="@+id/textViewBuddyEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:text="@string/main_loading"
+                android:textColor="@color/text_darkgrey"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            
+			<ImageButton
+                android:id="@+id/viewAllInvitationsButton"
+				android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textViewBuddyEmail"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_info_details"/> 	            
+            
+			</RelativeLayout>-->
+            <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <Button
+                android:id="@+id/rejectInvitationsButton"
+                android:layout_width="90dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+				android:background="@drawable/cancelbutton_gray"
+				android:text="@string/no_thanks"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            
+            <Button
+                android:id="@+id/acceptButton"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="90dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="5dp"
+				android:background="@drawable/positivebutton"
+                android:text="@string/lets_play"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            
+			</RelativeLayout>
+			
+            <!-- 
+			<LinearLayout
+			    android:id="@+id/viewAllInvitationsLayer"
+			    android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="vertical">
+			<View
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="1dip"
+                android:background="@color/darkgrey" />         
+			    
+            <Button
+                android:id="@+id/viewAllInvitationsButton"
+                android:layout_width="240dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/generalbutton"
+                android:text="@string/settings_incoming_request"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>    
+            </LinearLayout> -->
+            
+        </LinearLayout>
+
+        <!--
+          <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/flowers" />
+        -->
+
+    </LinearLayout>
+<!-- </LinearLayout>  -->
+</ScrollView>

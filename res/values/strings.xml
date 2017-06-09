@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Screen Titles -->
+    
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_register">Register</string>
+    
+    <string name="title_activity_main">Healthy Together</string>    
+    <string name="title_activity_authenticate_fitbit">Authorization</string>
+    <string name="title_activity_accept_buddy">Game Request</string>
+    <string name="title_activity_pending_buddy_request">Remind Buddy</string>    
+    <string name="title_activity_select_cheer_template">Cheer Friend</string>
+    <string name="title_activity_select_taunt_template">Taunt Friend</string>
+    <string name="title_activity_invite_buddy">Invite Buddy</string>
+    <string name="title_activity_main2">Healthy Together</string>    
+    <string name="title_activity_compose_message">Compose Message</string>    
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_log_history">Log History</string>
+
+
+   
+    
+    
+    
+    
+    <string name="app_name">Healthy Together</string>
+    <string name="dummy_content">Happy\nTogether</string>
+    <string name="dummy_button">Start</string>
+    <!-- <string name="authenticate_msg">In order to use HealthyTogether, please allow it to access your Fitbit data.\n\nClick on the following button to perform the authorisation.\nAfter authorisation is complete please return to the app.</string> -->
+    <string name="authenticate_msg">In order to use HealthyTogether, please allow it to access your Fitbit data.\n\nClick on the following button to perform the authorization.</string>
+    <string name="authenticate_msg_continued">After you performed the authorization please click the button below to continue.</string>
+
+    <string name="my_game">My Game</string>
+    <string name="you_are_playing_with">You are playing with:</string>
+    <string name="your_steps">Your Steps:</string>
+    <string name="other_steps">Alice\'s Steps:</string>
+    <string name="step_badges">Your Step Badges</string>
+    <string name="floor_badges">Your Floor Badges</string>
+    <string name="steps_until_next_badge">Your step score </string>
+    <string name="floors_until_next_badge">Your floor score </string>
+    <string name="until_next_badge">until next badge</string>
+    <string name="my_badges">My Badges</string>
+    <string name="cheer_friend">Cheer\nFriend</string>
+    <string name="taunt_friend">Taunt\nFriend</string>
+    
+    <string name="pledge_confirm_title">Confirm Your Pledge</string>
+    <string name="pledge_confirm_content_step">You are about to pledge</string>
+    <string name="pledge_confirm_content_floor">You are about to pledge</string>
+   
+    <string name="yes_change_buddy">Yes, change buddy!</string>
+    <string name="back_to_game">Back to\ngame</string>
+    <string name="no_continue_to_game">No, back to game!</string>
+    <string name="your_buddy_will_be_notified">Your buddy will be notified by e-mail.</string>
+    <string name="are_you_sure_to_change">Are you sure you want change a buddy? </string>
+
+    <string name="error_general">An error has occurred. Please try again later.</string>
+    <string name="general_error_dialog_title">An error has occurred.</string>
+
+    <string name="invite_intro">You don\'t have a friend yet. Who do you want to play with?</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_template_dialog">TemplateDialog</string>
+    
+    <!-- Strings we observed in SettingsActivity. Some dialog items may also appear in other screens -->
+    
+    <string name="settings_alternate_title">Your account has been created!</string>
+    
+    <string name="connection_error_title">Connection Error </string>
+    <string name="connection_error_message">No internet connection. Please check your connection to continue using HealthyTogether.</string>
+    <string name="connection_error_retry">Try to reconnect</string>
+    <string name="connection_toast_message">No internet connection. Please try again later.</string>
+    
+    <string name="ok_button_string">OK</string>
+    <string name="switching_buddy_string">Switching Buddy</string>
+    <string name="canceling_game">Canceling your game&#8230;</string>
+
+    <string name="welcome">Welcome</string>
+    
+    <string name="settings_activity_invitation_status">Invitation Status</string>
+    <string name="settings_progress_title">Loading</string>
+    <string name="settings_progress_message">Checking your settings&#8230;</string>
+    
+    <string name="settings_no_invitation">You do not have any incoming invitations</string>
+    <string name="settings_no_buddy_warning">You do not have a buddy to play with.</string>
+    <string name="settings_incoming_request">See all incoming requests</string>
+    <string name="main_no_buddy_warning">You do not have a buddy to play with. Please invite a person to continue playing.</string>
+    
+    <string name="authorize_button">Authorize</string>
+    <string name="fitbit_checking">Checking the Fitbit Authorization&#8230;</string>
+    <string name="fitbit_rationale">In order to visualize your steps and floors, make sure that you allowed HealthyTogether to access to your Fitbit account.</string>
+    <string name="settings_fitbit_authentication">Fitbit Authorization</string>
+    <string name="settings_fitbit_not_authenticated">To use HealthyTogether, you must authorise us to connect to your Fitbit account. Tap on the button below to complete authorization. You will be redirected to a webpage.</string>
+    <string name="settings_fitbit_authenticated"> You have already connected HealthyTogether to your account. Tap on the button below if you want to check again. You will be redirected to a webpage.</string>
+    
+    <string name="social_network">Buddies</string> <!-- The Social Network -->
+    <string name="buddy_rule">In order to play the game, you need to pair with a person.</string>
+    <string name="social_checking">Checking your connections&#8230;</string>
+    
+    <string name="the_game">The Game</string>
+    <string name="settings_reminder">You can return here via Android options button.</string>
+    <string name="continueGame">Continue the Game</string>
+    <string name="logout">Logout</string>
+    
+    <string name="buddy_stopped_playing"> Sorry, but your buddy wants to play with someone else. Please find another buddy to continue playing.</string>
+    <string name="invitation_rejected"> Sorry, but () rejected your invitation. Please find another buddy to continue playing.</string>
+    <string name="send_invitation"> Send an Invitation </string>
+    <string name="outgoing_invitation"> Pending invitation (1) </string>
+    <string name="invitation_pending"> You have sent an invitation, but your invitee has not responded yet. </string>
+    <string name="received_invitation"> You have some invitations. Check if you would like to accept them.</string>
+    <string name="received_invitation_while_waiting"> Your invitee has not responded yet, and you have received some additional invitations. Check if you would like to accept them.</string>
+    <string name="leave_buddy">Leave Buddy</string>
+    <string name="currently_with">You are currently playing with </string>
+    <string name="currently_playing">You are currently playing the game </string>
+    <string name="invited_while_playing">You are currently playing the game, but you also have some other invitations. Check if you would like to accept them.</string>
+    <string name="but_you_also_have">, but you also have some other invitations. Check if you would like to accept them.</string>
+    <string name="invite_someone_else">Invite someone else</string>
+    
+    
+    <string name="you_were_playing_with">You were playing with </string>
+    <string name="and_now_unpaired">, and now you are unpaired. You can now start playing with another person. Who do you want to play with?</string>
+    
+    
+    <!-- Strings we observe in XMLs related to Main2Activity -->
+    
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="your_log">Your Log</string>
+    <string name="mood">Mood?</string>
+    <string name="history">History</string>
+    <string name="social">Social?</string>
+    <string name="food">Food?</string>
+    <string name="activity">Activity?</string>
+    <string name="you">You  </string>
+    <string name="your">Your  </string>
+    <string name="steps"> steps</string>
+    <string name="floors"> floors</string>
+    <string name="main_loading">loading&#8230;</string>
+    <string name="log_after_connection">Your log will be automatically sent after establishing an internet connection.</string>
+    
+    <!-- Strings we utilize in Main2Activity.java -->
+    <string name="change_buddy">Change Buddy </string>
+    <string name="manual_sync">Manual Sync</string>
+    
+    <string name="other">Other</string>
+    <string name="together">Together</string>
+    <string name="alone">Alone</string>
+    <string name="nothing_left">You do not have any sent or received invitations anymore. Who do you want to play with?</string>
+    <string name="buddy_change">Buddy Change</string>
+    <string name="steps_tab">Steps</string>
+    <string name="floors_tab">Floors</string>
+    <string name="main_synchronization_title">Synchronization</string>
+    <string name="main_synchronization_content">Synchronizing your steps and floors&#8230;</string>
+	<string name="exercises_tab">Exercises</string>
+    <string name="sedentary_tab">Sedentary</string>
+    <string name="customize_dialog_title">Customize Activity</string>
+    <string name="customize_dialog_content">Please specify your customized activity</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="your_activity">Your Activity</string>
+    <string name="food_title">Food</string>
+    <string name="mood_title">Your Mood</string>
+    <string name="social_title">Social Info</string>
+    <string name="positive_tab">Positive</string>
+    <string name="negative_tab">Negative</string>
+    <string name="log_successful">Log sent successfully</string>
+    <string name="return_to_settings">OK</string>
+    <string name="not_validated">Could not update your steps and floors. It appears that your Fitbit authorization was unsuccessful. Would you like to authorize again?</string>
+    <string name="sync_failed">Synchronisation failed</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="mild">Mild</string>
+    <string name="normal">Normal</string>
+    <string name="strong">Strong</string>
+    
+    <string name="buddy_confirm_title">Ready to Play?</string>
+    <string name="are_you_sure_to_play">Are you sure you want to play with</string>
+    
+    
+    
+    <string name="incomplete_log">Please specify the details for the log first.</string>
+    <string name="log_send_error">Could not send the log. Please try again later.</string>
+    
+    <string name="congrats_title">Congratulations! You and your buddy achieved a new badge together!</string>
+    <string name="congrats_steps_title">Congratulations! You and your buddy achieved a new steps badge!</string>
+    <string name="congrats_floors_title">Congratulations! You and your buddy achieved a new floors badge!</string>
+    <string name="congrats_content">Hint: you can earn a badge more quickly by encouraging your buddy to walk more.</string>
+       
+    
+    <!-- Strings we observe in XMLs related to MessagesActivity -->
+    
+    <string name="type_message">Type Message</string>
+    <string name="send_msg">Send</string>
+    
+    <!-- Strings we observe in MessagesActivity.java  -->
+    
+    <string name="messages_progress_title">Messages</string>
+    <string name="messages_progress_content">Loading your messages&#8230;</string>
+    <string name="sending_your_message">Sending your message&#8230;</string>
+    <string name="message_sent">Message sent.</string>
+    <string name="message_sending_error">Could not send message. Please try again later.</string>
+    <string name="message_buddy_left">Cannot send the message: your buddy has stopped playing with you.</string>
+    <string name="message_ack_waiting">Your message is still being sent&#8230;</string>
+    
+    <string name="pick_a_template">Pick a template</string>
+    
+    
+    <!-- Strings we observe in XMLs related to HistoryActivity -->
+    <string name="retrieving_logs">retrieving the list of logs&#8230;</string>
+    
+    <!-- Strings in HistoryActivity.java -->
+    
+    <string name="logs_dialog_title">Your logs</string>
+    <string name="logs_dialog_content">Loading your logs&#8230;</string>
+    <string name="social_info_changed">Social Info Changed!</string>
+    <string name="mood_changed">Mood Changed!</string>
+    <string name="log_deleted">Log deleted!</string>
+    
+    <string name="none">None</string>
+    
+    
+    <!-- Strings we observe in XMLs related to IntroActivity and LoginActivity -->
+    <string name="already_a_member">Already a member?</string>
+    <string name="login">Login</string>
+    <string name="forgot_password"><u>Recover lost password</u></string>
+    <string name="no_account">Don\&apos;t have an account?</string>
+    <string name="register">Register</string>
+    <string name="error">Error</string>
+    <string name="forgot_password_title">Recover lost password</string>
+    <string name="forgot_password_content">Enter your e-mail:</string>
+    <string name="forgot_password_result">Your password is sent to </string>
+    
+    
+    
+    <!-- Strings related to login -->
+    <!--  <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>-->
+    <string name="action_sign_in_register"><b>Sign in</b></string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="menu_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_incorrect_email">The entered e-mail is incorrect</string>
+    <string name="error_field_required">This field is required</string>    
+    
+    <!-- Strings we observe in XMLs related to RegisterActivity -->
+    
+    <string name="create_account">Create Account</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_password_again">Password again</string>
+    
+    
+    
+    <!-- Strings in RegisterActivity.java  -->
+    
+    <string name="all_fields_please">Please fill out all fields</string>
+    <string name="password_match_error">Passwords do not match</string>
+    <string name="password_length">Password should be at least 4 characters</string>
+    <string name="email_already_registered">Email already registered!</string>
+    <string name="registration_complete_title">Registration Complete</string>
+    <string name="registration_complete_content">You have successfully registered. Please log in to continue.</string>
+    
+    <!-- Strings we observe in XMLs related to AcceptBuddyActivity -->
+    
+    <string name="other_options">Other Options</string>
+    <string name="retrieving_inviters">retrieving the list of inviters&#8230;</string>
+    <string name="game_invitation">Game Invitation</string>
+    <string name="you_have_an_invitation">You have a game invitation from</string>
+    <string name="you_have_invitations">You have game invitations from</string>
+    <string name="lets_play">Let\&apos;s Play!</string>
+    <string name="see_all_requests">See all requests</string>
+    <string name="see_outgoing_requests">See your pending\ninvitation</string> <!-- outgoing -->
+    <string name="reject_invitations">Reject the invitations</string>
+    <string name="no_thanks">No, thanks!</string>
+    
+    <!-- Strings in AcceptBuddyActivity.java -->
+    
+    <string name="multiple_users">Multiple Users</string>
+    <string name="unfortunately_buddy_changed_mind">Unfortunately, your potential buddy changed his mind before you accepted his/her invitation.</string>
+    <string name="your_invitations_dialog_title">Your Invitations</string>
+    <string name="your_invitations_dialog_content">Loading your inviters&#8230;</string>
+    <string name="accept_dialog_title">Accept</string>
+    <string name="accept_dialog_content">Preparing your game&#8230;</string>
+    <string name="select_an_inviation_first">Please select an invitation first!</string>
+    <string name="you_have_accepted">You have accepted the invitation.</string>
+    <string name="no_outgoing_invitations">No invitations are pending.</string> <!-- outgoing -->
+    <string name="rejecting_dialog_title">Rejecting</string>
+    <string name="rejecting_dialog_content">Removing the invitation</string> <!-- s you have received -->
+    
+    <string name="rejected_requests_continue_playing">You have rejected all the requests, you can now continue playing with your buddy</string>
+    <string name="inviters_canceled_invitations">Your inviters have changed their mind, so there are no invitations remaining.</string>
+    
+    <string name="buddy_choosing_title">Choose Your Buddy</string>
+    
+    
+    <!-- reminder successfully sent! -->
+    <string name="reminder_confirm">Reminder successfully sent!</string>
+    
+    <!-- Strings we observe in XMLs related to InviteBuddyActivity -->
+    
+    <string name="update_search_engine">updating the buddy search engine&#8230;</string>
+    <string name="invite_a_friend">Invite a Friend!</string>
+    <string name="invite_buddy_email">... OR TYPE AN EMAIL</string>
+    <string name="our_suggesions">WE SUGGEST THE FOLLOWING USERS</string>
+    <string name="no_suggesions">No suggestions available</string>
+    <string name="type_for_email">Type here for buddy e-mail</string>
+    <string name="your_message">WRITE YOUR MESSAGE</string>
+    <string name="default_invitation_message">Hi, let\&apos;s be friends on HealthyTogether. With a HealthyTogether account, we can see who can walk the most steps per day, or be the most active daily and weekly. We can support each other and take our fitness to another level. HealthyTogether. Game on!</string>
+    <string name="invitation_confirm">INVITE</string>
+    <string name="cancel_invitation">Cancel</string>
+    
+    <!-- Strings in InviteBuddyActivity.java -->
+    
+    <string name="who_do_you_want"> Who do you want to play with?</string>
+    <string name="invite_list_progress_title">Search Engine</string>
+	<string name="invite_list_progress_content">Loading HealthyTogether users, please wait&#8230;</string>
+	<string name="error_own_email">This is your email.</string>
+	<string name="invalid_email">Please enter a valid email address</string>
+	
+	
+    <!-- Strings we observe in XMLs related to PendingBuddyRequestActivity -->
+    
+    <string name="request_is_sent">Your Request is Sent</string>
+    <string name="your_request_is_sent">Your request is sent to</string>
+    <string name="waiting_response_from">Waiting for the response from:</string>
+    <string name="fake_email">john.doe@example.com</string>
+    <string name="send_reminder_button">Remind Buddy</string>
+    
+    <!-- Strings in PendingBuddyRequestActivity.java -->
+    
+    <string name="long_waiting_dialog_title">Your invitation is still pending!</string>
+    <string name="long_waiting_it_has_been">It has been </string>
+    <string name="long_waiting_days_since"> day(s) since your buddy has not replied.</string>
+    <string name="buddy_changed_mind"> Your buddy has changed his mind, so you are no longer paired. Who do want to play with?</string>
+    <string name="your_invitation_canceled">Your invitation was canceled before. Who do want to play with?</string>
+    
+    
+    <string name="you_have_canceled_previous">You have canceled your previous invitation. Who do you want to play with?</string>
+    
+    <!-- Strings we observe in XMLs related to AuthenticateFitbitActivity -->
+    
+    <string name="authorization">Authorization</string>
+    <string name="step_1">Step 1</string>
+    <string name="step_2">Step 2</string>
+    <string name="i_performed">I Performed the Authorization</string>
+    
+    <string name="auth_control_dialog_title">Authentication Control</string>
+    <string name="auth_control_dialog_content">Authentication Control</string>
+    
+    
+    <!-- Log and Message Checking Services -->
+    
+    <string name="whats_up">What have you been up to?</string>
+    <string name="your_invitation_accepted">Your game request has been accepted</string>
+    <string name="log_request_title">Hello! Log time!</string>
+    <string name="new_message_title">New message</string>
+    <string name="new_message_content">You have received a new message</string>
+    <string name="log_received_title">Log received</string>
+    <string name="log_received_content">Your log has been stored in the database.</string>
+    <string name="multiple_invitations_title">Multiple Game Invitations!</string>
+    <string name="multiple_invitations_content">You are popular! A couple of people invited you.</string>
+    <string name="someone_is_waiting"> is waiting</string>
+    <string name="it_is_around">It\&apos;s around </string>
+    <string name="you_should_log">, please log your mood, social info and activity</string>
+    <string name="log_time_begin">Log time, </string>
+    
+    
+    <!-- Items for community version -->
+    <string name="leaderboard">Leaderboard</string>
+    <string name="goto_Group">Home</string>
+    <string name="goto_community">Community</string>
+    <string name="main_activity_community">Community</string>
+    <string name="we_will_take">We\'ll achieve</string>
+    <string name="floors_today">floors today!</string>
+    <string name="we_will_walk">We\'ll achieve</string>
+    <string name="steps_today">steps today!</string>
+    <string name="your_team_has_reached">Your team has achieved </string>
+    <string name="your_team">Your team </string>
+    <string name="percent_of_your_goal">% of your goal!</string>
+    <string name="statistics_up_to_date">The stats are already up to date</string>
+    <string name="team_of">Team of </string>
+    <string name="and"> and </string>
+    <string name="leaderboard_synchronization_title">Leaderboard Synchronization</string>
+    <string name="leaderboard_synchronization_message">Fetching everybody\'s scores, please wait!</string>
+    <string name="avatar_already_set">Your team has already set your avatar!</string>
+    <string name="choose_your_avatar">Choose your avatar:</string>
+    <string name="refresh">Refresh</string>
+    <string name="change_avatar">Change\n Avatar</string>
+    <!--  <string name="pledge_congrats_start"></string>-->
+    <string name="pledge_congrats_steps_msg">Congratulations!\n\nYou and your buddy have reached your group steps pledge!</string>
+    <string name="pledge_congrats_floors_msg">Congratulations!\n\nYou and your buddy have reached your group floors pledge</string>
+    <string name="pledge_button_text"><b>Pledge</b></string>
+    <string name="pledge_confirm_button_text">Pledge</string>
+    
+    
+    <string name="you_are_ranked">You and your buddy are currently ranked as </string>
+    <string name="you_were_ranked">You and your buddy were ranked as </string>
+    <string name="this_day">this day</string>    
+    <string name="first_suffix">st</string>
+    <string name="second_suffix">nd</string>
+    <string name="third_suffix">rd</string>
+    <string name="late_first_suffix">st</string>
+    <string name="late_second_suffix">nd</string>
+    <string name="late_third_suffix">rd</string>    
+    <string name="rest_suffix">th</string>
+    
+    
+    <string-array name="countries_array">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Bfghanistan</item>
+        <item>Blbania</item>
+        <item>Blgeria</item>
+        <item>Bmerican Samoa</item>
+        <item>Bndorra</item>
+        <item>Bngola</item>
+        <item>Bnguilla</item>
+        <item>Bntarctica</item>
+    </string-array>
+
+</resources>

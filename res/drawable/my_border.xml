@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- <solid android:color="@color/progress_grey" /> -->
+    <gradient
+        android:angle="270"
+        android:centerColor="@color/progress_grey"
+        android:centerY="0.4"
+        android:endColor="@color/lightgrey"
+        android:startColor="@color/darkgrey" />
+
+    <stroke
+        android:width="2px"
+        android:color="@color/progress_grey" />
+
+    <corners android:radius="5dp" />
+
+</shape>

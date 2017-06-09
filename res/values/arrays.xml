@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    
+    <array name="positiveMoodTemplates">
+        <item>Amused</item>  
+	    <item>Happy</item>  
+	    <item>Interested</item>  
+	    <item>Joyful</item>  
+	    <item>Proud</item>  
+	    <item>Relieved</item>
+	    <item>Surprised</item>  
+	    <item>Tender</item>          
+    </array>
+      
+     <array name="negativeMoodTemplates">
+        <item>Angry</item>  
+	    <item>Contempt</item>  
+	    <item>Disgusted</item>  
+	    <item>Fear</item>  
+	    <item>Regret</item>  
+	    <item>Sad</item>
+	    <item>Shy</item>  
+	    <item>Stressed</item>          
+    </array>
+    
+     <array name="allMoodTemplates">
+        <item>Amused</item>  
+	    <item>Happy</item>  
+	    <item>Interested</item>  
+	    <item>Joyful</item>  
+	    <item>Proud</item>  
+	    <item>Relieved</item>
+	    <item>Surprised</item>  
+	    <item>Tender</item>
+		<item>Angry</item>  
+	    <item>Contempt</item>  
+	    <item>Disgusted</item>  
+	    <item>Fear</item>  
+	    <item>Regret</item>  
+	    <item>Sad</item>
+	    <item>Shy</item>  
+	    <item>Stressed</item>  
+     </array>     
+     
+     <array name="moodIntensityTemplates">
+         <item>Mild</item>
+         <item>Normal</item>
+         <item>Strong</item>
+     </array>
+
+     
+
+     
+     
+     <array name="allActivityTemplates">
+	    <item>Cycling</item>  
+	    <item>Dancing</item>  
+	    <item>Jogging</item>  
+	    <item>Lifting</item>  
+	    <item>Skating</item>
+	    <item>Skiing</item>  
+	    <item>Swimming</item>
+	    <item>Tennis</item>
+	    <item>Walking</item> 
+        <item>Meeting</item>
+        <item>Reading</item>
+        <item>Rest</item>
+        <item>Sitting</item>
+        <item>TV</item>
+        <item>Working</item>
+        <item>Other</item>  
+        <item>None</item>
+     </array>
+     
+     <!-- exerciseTemplates = new String[] {
+			"Jogging", // "exercises"
+			"Walking", "Swimming", "Lifting", "Cycling", "Skating", "Tennis",
+			"Skiing", "Dancing", "TV", // Here we start "sedentary" activities,
+										// starting at 9th index
+			"Reading", "Working", "Meeting", "Rest", "Sitting", "Other" }; -->
+     
+     
+    <array name="exerciseTemplates">  
+	    <item>Cycling</item>  
+	    <item>Dancing</item>  
+	    <item>Jogging</item>  
+	    <item>Lifting</item>  
+	    <item>Skating</item>
+	    <item>Skiing</item>  
+	    <item>Swimming</item>
+	    <item>Tennis</item>
+	    <item>Walking</item> 
+	    <item>Other</item>            
+    </array>    
+    
+    <array name="sedentaryTemplates">
+         <item>Meeting</item>
+         <item>Reading</item>
+         <item>Rest</item>
+         <item>Sitting</item>
+         <item>TV</item>
+         <item>Working</item>
+         <item>Other</item>
+    </array>
+     
+    <array name="foodTemplates">
+         <item>Breakfast</item>
+         <item>Lunch</item>
+         <item>Dinner</item>
+         <item>Snack</item>
+    </array>
+    
+    <array name="socialTemplates">
+         <item>Alone</item>
+         <item>Together</item>
+    </array>    
+     
+    
+    <array name="cheerTemplates">
+        <item>We can make it! Rise up!</item>
+        <item>We are doing quite well. Let\&apos;s finish this off!</item>
+        <item>We can earn a badge real soon. Let\&apos;s go for a walk!</item>
+    </array>
+    
+    <array name="tauntTemplates">
+        <item>Haha, I\&apos;m walking more steps than you. Better catch up!</item>
+        <item>Who\&apos;s slow now? Try catching up!</item>
+        <item>Come on! Is that all you got? You can do better!</item>
+        
+    </array>
+    
+    <string-array name="pledge_amount">
+        <item>2,000</item>
+        <item>5,000</item>
+        <item>10,000</item>
+        <item>20,000</item>
+        <item>40,000</item>
+        <item>60,000</item>
+    </string-array>
+    
+        <string-array name="pledge_amount_floor">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>    
+    
+</resources>

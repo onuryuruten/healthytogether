@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/moodWrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/moodOptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="9dip"
+            android:text="Mood"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <RadioGroup
+                android:id="@+id/moodRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:paddingRight="10dip" >
+
+                <RadioButton
+                    android:id="@+id/intensityRadioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:focusable="false"
+                    android:text="Mild"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/intensityRadioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:focusable="false"
+                    android:text="Normal"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/intensityRadioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:focusable="false"
+                    android:text="Strong"
+                    android:textSize="12sp" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

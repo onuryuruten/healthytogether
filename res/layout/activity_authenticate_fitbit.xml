@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/border"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/authorization"
+                android:textColor="@color/text_darkgrey"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/darkgrey" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/step_1"
+                android:textColor="@color/text_darkgrey"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/authenticate_msg"
+                android:textColor="@color/text_darkgrey" />
+
+            <!--
+         <WebView 
+        android:id="@+id/authorizeView"
+        android:layout_below="@id/info"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"/>
+            -->
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/generalbutton"
+                android:onClick="onOpenFitbiWebsiteButtonClicked"
+                android:text="@string/authorize_button"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="15dp"
+                android:background="@color/darkgrey" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/step_2"
+                android:textColor="@color/text_darkgrey"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/authenticate_msg_continued"
+                android:textColor="@color/text_darkgrey" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/registerbg"
+                android:onClick="onAuthorizeCompleteButtonClicked"
+                android:text="@string/i_performed"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

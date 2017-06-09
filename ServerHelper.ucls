@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.GetStartDateForGameTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="580" y="-407"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.RetrieveBuddyEMailTask2" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="603" y="-236"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.AcceptBuddyRequestTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="614" y="-76"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.RetrieveBuddyEMailTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="846" y="5"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.CheckInvitationDateTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1064" y="73"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.RetrieveAllMessagesTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1589" y="189"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" 
+    name="ch.epfl.hci.healthytogether.communication.ServerHelper.RetrievePendingBuddyEMailTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1301" y="131"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.RetrieveBuddyNameTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1860" y="225"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.RemoveLogTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2116" y="266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.RemindPendingBuddyTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2401" y="280"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="765" width="325" x="3511" y="-804"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.InviteBuddyTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2670" y="336"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.RegisterTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2961" y="317"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.SendMessageTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3209" y="317"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.ChangeLogTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3454" y="321"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.RetrieveBadgesTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="203" x="3561" y="1"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.CheckGroupTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3898" y="316"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.RetrieveStepCountTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4145" y="310"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.DeFriendTask2" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4373" y="312"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.MyXMLHandler" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4639" y="333"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.SyncBackendWithFitbitTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4947" y="311"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.GetListOfUsersTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5235" y="270"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.MsgXMLHandler" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5485" y="233"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.BadgesXMLHandler" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6055" y="69"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.CheckBadgesTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="5778" y="146"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.DeFriendTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6363" y="-25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.CheckMessagesTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6568" y="-104"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.UserXMLHandler" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6795" y="-251"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="ch.epfl.hci.healthytogether.communication.ServerHelper.RetrieveFloorCountTask" 
+    project="ch.epfl.hci.healthytogether" 
+    file="/ch.epfl.hci.healthytogether/src/ch/epfl/hci/happytogether/communication/ServerHelper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6646" y="-455"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <nesting id="30">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="26"/>  
+  </nesting>  
+  <nesting id="31">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="18"/>  
+  </nesting>  
+  <nesting id="32">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </nesting>  
+  <nesting id="33">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="10"/>  
+  </nesting>  
+  <nesting id="34">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="23"/>  
+  </nesting>  
+  <nesting id="35">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="22"/>  
+  </nesting>  
+  <nesting id="36">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="1"/>  
+  </nesting>  
+  <nesting id="37">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="29"/>  
+  </nesting>  
+  <nesting id="38">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="15"/>  
+  </nesting>  
+  <nesting id="39">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <nesting id="40">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="5"/>  
+  </nesting>  
+  <nesting id="41">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="20"/>  
+  </nesting>  
+  <nesting id="42">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="2"/>  
+  </nesting>  
+  <nesting id="43">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="27"/>  
+  </nesting>  
+  <nesting id="44">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="19"/>  
+  </nesting>  
+  <nesting id="45">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="9"/>  
+  </nesting>  
+  <nesting id="46">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="6"/>  
+  </nesting>  
+  <nesting id="47">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="7"/>  
+  </nesting>  
+  <nesting id="48">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
+  <nesting id="49">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="12"/>  
+  </nesting>  
+  <nesting id="50">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="16"/>  
+  </nesting>  
+  <nesting id="51">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="14"/>  
+  </nesting>  
+  <nesting id="52">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="25"/>  
+  </nesting>  
+  <nesting id="53">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="21"/>  
+  </nesting>  
+  <nesting id="54">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="17"/>  
+  </nesting>  
+  <nesting id="55">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="28"/>  
+  </nesting>  
+  <nesting id="56">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="24"/>  
+  </nesting>  
+  <nesting id="57">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="8"/>  
+  </nesting>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

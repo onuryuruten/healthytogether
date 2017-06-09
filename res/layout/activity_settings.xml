@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+		<ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/healthytogether" />
+        
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border"
+            android:orientation="vertical" >
+
+            <!-- android:id="@+id/userNameInSettings" -->
+            <TextView
+                android:id="@+id/socialCurrentStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/welcome"
+                android:textColor="@color/text_darkgrey"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/darkgrey" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/settings_fitbit_authentication"
+                android:textColor="@color/text_darkgrey"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!--  <TextView
+                android:id="@+id/fbAuthinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_darkgrey" />-->
+            <!-- android:text="@string/fitbit_rationale" -->
+
+            <TextView
+                android:id="@+id/fbCurrentStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/fitbit_checking"
+                android:textColor="@color/text_darkgrey" />
+
+            <!--
+         <WebView 
+        android:id="@+id/authorizeView"
+        android:layout_below="@id/info"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"/>
+            -->
+
+            <Button
+                android:id="@+id/fbAuthenticationButton"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/generalbutton"
+                android:onClick="onOpenFitbiWebsiteButtonClicked"
+                android:text="@string/authorize_button"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/fbAuthenticationBorder"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="15dp"
+                android:background="@color/darkgrey" />
+
+            <TextView
+                android:id="@+id/socialSettingsHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/social_network"
+                android:textColor="@color/text_darkgrey"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_darkgrey" />
+             android:text="@string/buddy_rule" -->
+
+
+            <!--  <TextView
+                android:id="@+id/socialCurrentStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/social_checking"
+                android:textColor="@color/text_darkgrey" />-->
+
+            <Button
+                android:id="@+id/outgoingInvitations"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/registerbg"
+                android:onClick="onOutgoingInvitationsButtonClicked"
+                android:text="@string/send_invitation"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/incomingInvitations"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/generalbutton"
+                android:onClick="onIncomingInvitationsButtonClicked"
+                android:text="@string/settings_incoming_request"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="15dp"
+                android:background="@color/darkgrey" />
+
+            <TextView
+                android:id="@+id/game_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="@string/the_game"
+                android:textColor="@color/text_darkgrey"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settings_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" 
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:text="@string/settings_reminder"
+                android:textColor="@color/text_darkgrey" />
+            
+
+            <!-- android:text="@string/authenticate_msg_continued" -->
+
+            <Button
+                android:id="@+id/continueHTButton"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/registerbg"
+                android:onClick="onContinueToHTButtonClicked"
+                android:text="@string/continueGame"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <!-- <View
+                android:id="@+id/game_info_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="15dp"
+                android:background="@color/darkgrey" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/generalbutton"
+                android:onClick="onLogoutButtonClicked"
+                android:text="@string/logout"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

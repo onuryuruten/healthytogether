@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    tools:context=".PendingBuddyRequestActivity" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/healthytogether" />
+
+    <LinearLayout
+        style="@style/LoginFormContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/waiting_response_from"
+            android:textColor="@color/text_darkgrey"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <!-- android:text="@string/request_is_sent" -->
+        
+    <!--     <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/darkgrey" /> -->
+
+      <!--   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/waiting_response_from"
+            android:textColor="@color/text_darkgrey" /> -->
+
+        <TextView
+            android:id="@+id/textViewPendingBuddyEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/fake_email"
+            android:textColor="@color/text_darkgrey"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+			android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"                
+            android:background="@drawable/cancelbutton_gray"
+            android:onClick="onCancelInvitationButtonClicked"
+            android:text="@string/cancel_invitation"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+	        android:layout_alignParentTop="true"
+        	android:layout_alignParentRight="true"                
+            android:background="@drawable/positivebutton"
+            android:onClick="onRemindButtonClicked"
+            android:text="@string/send_reminder_button"            
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/flowers"
+        android:visibility="invisible" />
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chat_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/healthytogether" />
+
+    <LinearLayout
+        android:id="@+id/logincontainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/logintxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/already_a_member"
+            android:textColor="@color/text_darkgrey"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/generalbutton"
+            android:onClick="loginClicked"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logincontainer2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/starttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.14"
+            android:text="@string/no_account"
+            android:textColor="@color/text_darkgrey"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/startbtn"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/registerbg"
+            android:onClick="registerClicked"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--
+     <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom|right"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="105dp"
+	        android:scaleType="centerInside"
+	        android:src="@drawable/flowers"
+	        android:visibility="invisible" /> 
+	    
+	    <LinearLayout
+	        android:id="@+id/registercontainer"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:layout_marginBottom="4dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@drawable/border"
+	        android:orientation="vertical"
+	        android:weightSum="5" >
+	
+	        <TextView
+	            android:id="@+id/starttxt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:layout_marginBottom="10dp"
+	            android:layout_marginTop="15dp"
+	            android:layout_weight="0.14"
+	            android:textSize="16sp"
+	            android:text="Don&apos;t have an account?" 
+	            android:textColor="@color/text_darkgrey"/>
+	
+	        <Button
+	            android:id="@+id/startbtn"
+	            android:layout_width="match_parent"
+	            android:layout_height="39dp"
+	            android:layout_marginBottom="5dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:background="@drawable/registerbg"
+	            android:onClick="registerClicked"
+	            android:textStyle="bold" 
+	            android:text="Register"
+	            android:textColor="@color/white"/>
+	        
+	    </LinearLayout>
+     </FrameLayout>
+    -->
+
+</LinearLayout>

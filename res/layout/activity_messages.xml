@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msgView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chat_background"
+    android:orientation="vertical" >
+
+    <!-- List people progress CONTINUE!! -->
+
+
+    <!--
+    <LinearLayout
+        android:id="@+id/message_retrieval_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/message_retrieval_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="retrieving the list of messages..."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    -->
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/form"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/form_grey_mask"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <!--
+             <View
+            android:id="@+id/formBg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/progress_grey_mask" />
+        -->
+
+        <ImageButton
+            android:id="@+id/imageButtonTemplate"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="3dp"
+            android:background="@android:color/transparent"
+            android:onClick="onTemplateButtonClicked"
+            android:scaleType="fitEnd"
+            android:src="@drawable/templateicon_backup" />
+
+        <EditText
+            android:id="@+id/typeMessage"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/textboxborder"
+            android:ems="10"
+            android:hint="@string/type_message"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:paddingBottom="5dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="5dp"
+            android:singleLine="false" />
+
+        <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="top"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/generalbutton"
+            android:onClick="onSendButtonClicked"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/send_msg"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButtonTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="413dp"
+            android:layout_toLeftOf="@+id/typeMessage"
+            android:background="@android:color/transparent"
+            android:onClick="onTemplateButtonClicked"
+            android:src="@drawable/templateicon_backup" />
+
+        <EditText
+            android:id="@+id/typeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="415dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:paddingLeft="3dp"
+            android:singleLine="false" />
+
+        
+               <Button
+		        android:id="@+id/sendButton"
+		        android:layout_width="match_parent"
+		        android:layout_height="38dp"
+		       android:layout_marginTop="415dp"
+		        android:background="@drawable/sendbutton3"
+		        android:onClick="onSendButtonClicked"
+		        android:text="Send"
+		        android:textColor="@android:color/white"
+		        android:textStyle="normal" />
+       
+
+        <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="415dp"
+            android:background="@drawable/generalbutton"
+            android:onClick="onSendButtonClicked"
+            android:text="Send"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+    -->
+
+</RelativeLayout>

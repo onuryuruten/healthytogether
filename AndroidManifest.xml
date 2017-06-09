@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ch.epfl.hci.happytogether"
+    android:versionCode="71"
+    android:versionName="3.7.7" >
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:name="ch.epfl.hci.happytogether.App"
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <!-- ASMA START -->
+        <activity
+            android:name="ch.epfl.hci.healthytogether.MainActivityCommunity"
+            android:label="@string/main_activity_community"
+            android:parentActivityName="ch.epfl.hci.healthytogether.Main2Activity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar" >>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogethers.Main2Activity" />
+        </activity>
+        <!-- ASMA END -->        
+        
+        
+        <activity
+            android:name="ch.epfl.hci.healthytogether.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="ch.epfl.hci.healthytogether.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName="ch.epfl.hci.healthytogether.MainActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.MainActivity" />
+        </activity>
+        <activity
+            android:name="ch.epfl.hci.healthytogether.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName="ch.epfl.hci.healthytogether.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.MainActivity" />
+        </activity>
+        <activity
+            android:name="ch.epfl.hci.healthytogether.IntroActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ch.epfl.hci.healthytogether.MainActivity"
+            android:label="@string/title_activity_main"
+            android:parentActivityName="ch.epfl.hci.healthytogether.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.LoginActivity" />
+        </activity>
+        
+        <activity
+            android:name="ch.epfl.hci.healthytogether.SettingsActivity"
+            android:label="@string/menu_settings"
+            android:parentActivityName="ch.epfl.hci.healthytogether.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.LoginActivity" />
+        </activity>
+                
+        <activity
+            android:name="ch.epfl.hci.healthytogether.HistoryActivity"
+            android:label="@string/title_log_history"
+            android:parentActivityName="ch.epfl.hci.healthytogether.Main2Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.Main2Activity" />
+        </activity>        
+        
+        <activity android:name="ch.epfl.hci.healthytogether.ExerciseTabHost" 
+            		android:label="Select Activity" 
+            		android:theme="@android:style/Theme.Dialog"/>
+        
+        <activity android:name="ch.epfl.hci.healthytogether.ExerciseCategory" 
+            		android:label="Exercises"
+            		 
+            		/>
+        
+        <activity android:name="ch.epfl.hci.healthytogether.SedentaryCategory" 
+            		android:label="Sedentary"
+            		 
+            		/>        
+        <activity
+            android:name="ch.epfl.hci.healthytogether.BadgesActivity"
+            android:label="Earned Badges"
+            android:parentActivityName="ch.epfl.hci.healthytogether.Main2Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.Main2Activity" />
+        </activity>             
+        <activity
+            android:name="ch.epfl.hci.healthytogether.SelectCheerTemplateActivity"
+            android:label="@string/title_activity_select_cheer_template"
+            android:parentActivityName="ch.epfl.hci.healthytogether.Main2Activity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.Main2Activity" />
+        </activity>
+        <activity
+            android:name="ch.epfl.hci.healthytogether.ComposeMessageActivity"
+            android:label="@string/title_activity_compose_message"
+            android:parentActivityName="ch.epfl.hci.healthytogether.SelectCheerTemplateActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.SelectCheerTemplateActivity" />
+        </activity>
+        
+        <!-- android:label="@string/app_name" -->
+        <activity
+            android:name="ch.epfl.hci.healthytogether.InviteBuddyActivity"
+            android:label="@string/title_activity_invite_buddy"
+            android:parentActivityName="ch.epfl.hci.healthytogether.MainActivity" 
+			android:configChanges="orientation|keyboardHidden"
+    		android:launchMode="singleTask">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.Main2Activity" /> <!-- Why was it MainActivity before?? -->		            
+        </activity>
+        
+<!-- 		    <intent-filter>
+		        <action android:name="android.intent.action.SEARCH" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		    </intent-filter>            
+			<meta-data android:name="android.app.default_searchable"
+        		android:value="ch.epfl.hci.healthytogether.InviteBuddyActivity" 
+        		 android:resource="@xml/searchable"/>	        
+        
+	    <activity 	android:name="ch.epfl.hci.healthytogether.SearchableActivity" 
+				    android:configChanges="orientation|keyboardHidden" 
+				    android:label="@string/app_name"
+				    android:launchMode="singleTask">
+				    <intent-filter>
+				        <action android:name="android.intent.action.SEARCH" />
+				        <category android:name="android.intent.category.DEFAULT" />
+				    </intent-filter>
+				    <meta-data 
+				        android:name="android.app.searchable"
+				        android:resource="@xml/searchable" />
+		            <meta-data
+		                android:name="android.support.PARENT_ACTIVITY"
+		                android:value="ch.epfl.hci.healthytogether.InviteBuddyActivity" />				    
+	    </activity>    
+	    
+		<provider android:name="ch.epfl.hci.healthytogether.service.SearchSuggestionsProvider"
+		    android:authorities="ch.epfl.hci.healthytogether.service.SearchSuggestionsProvider">
+		    
+		</provider>
+		<meta-data android:name="android.app.default_searchable"
+		    android:value="ch.epfl.hci.healthytogether.SearchableActivity" />	 -->    
+	    
+        <activity
+            android:name="ch.epfl.hci.healthytogether.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:parentActivityName="ch.epfl.hci.healthytogether.IntroActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.IntroActivity" />
+        </activity>
+        <activity
+            android:name="ch.epfl.hci.healthytogether.MessagesActivity"
+            android:label="@string/title_activity_select_cheer_template"
+            android:parentActivityName="ch.epfl.hci.healthytogether.Main2Activity"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.Main2Activity" />
+        </activity>
+        <activity
+            android:name="ch.epfl.hci.healthytogether.AuthenticateFitbitActivity"
+            android:label="@string/title_activity_authenticate_fitbit"
+            android:parentActivityName="ch.epfl.hci.healthytogether.RegisterActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.RegisterActivity" />
+        </activity>
+        <activity
+            android:name="ch.epfl.hci.healthytogether.AcceptBuddyActivity"
+            android:label="@string/title_activity_accept_buddy"
+            android:parentActivityName="ch.epfl.hci.healthytogether.IntroActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.IntroActivity" />
+        </activity>
+
+        <receiver android:name="ch.epfl.hci.healthytogether.service.CheckForMessageBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="ch.epfl.hci.healthytogether.service.CheckForMessageAlarmReceiver" >
+        </receiver>
+
+        <service android:name="ch.epfl.hci.healthytogether.service.CheckForMessageService" >
+        </service>
+        
+        <!-- <receiver android:name="ch.epfl.hci.healthytogether.service.CheckForLogBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>        
+        
+        <receiver android:name="ch.epfl.hci.healthytogether.service.CheckForLogAlarmReceiver" >
+        </receiver>
+        
+        <service android:name="ch.epfl.hci.healthytogether.service.CheckForLogService" >
+        </service>-->
+        
+        <activity
+            android:name="ch.epfl.hci.healthytogether.PendingBuddyRequestActivity"
+            android:label="@string/title_activity_pending_buddy_request"
+            android:parentActivityName="ch.epfl.hci.healthytogether.IntroActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ch.epfl.hci.healthytogether.IntroActivity" />
+        </activity>
+    </application>
+
+</manifest>

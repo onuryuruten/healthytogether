@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true" >
+
+<LinearLayout 
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/healthytogether" />
+ 
+    
+    <RelativeLayout 
+          android:padding="10px"
+          android:orientation="vertical" 
+          android:id="@+id/task_edit_panel"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/badgebg"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+           >
+        
+
+        
+        <!-- params for datepanel: android:layout_width="match_parent"
+        android:layout_height="44dp" -->
+        <RelativeLayout
+        android:id="@+id/datePanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/my_box_border_bottom"
+        android:padding="5dp" 
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/previousLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/previousicon_nonclickable"
+            />
+        <!-- android:onClick="showPreviousHistory" -->
+        
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/today"
+            android:textColor="@color/text_darkgrey"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        
+        <ImageView
+            android:id="@+id/nextLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/nexticon_nonclickable"
+            />
+        <!-- android:onClick="showLaterHistory" -->
+        
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:onClick="onRefreshButtonClicked"
+            android:src="@drawable/refresh_button_selector"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+      
+    	<TabHost android:id="@+id/edit_item_tab_host"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"                
+                android:layout_below="@+id/datePanel"> 
+            <TabWidget android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" 
+                        android:id="@android:id/tabs" /> 
+    		<FrameLayout
+              android:id="@android:id/tabcontent"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingTop="50px"> <!--  you need that if you don't want the tab content to overflow --> 
+              <LinearLayout
+                   android:id="@+id/show_step_tab"
+                   android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  > 
+    		   				
+    				<include
+    				    android:id="@+id/step_progress_community"
+    				    android:layout_width="279dp"
+    				    layout="@layout/activity_progress_community" />
+ 				
+    			</LinearLayout>
+
+    	        <LinearLayout
+                   android:id="@+id/show_floor_tab"
+                   android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    > 
+    			
+    	          <include android:id="@+id/stair_progress_community" layout="@layout/activity_progress_floors_community" />
+    	            
+    			</LinearLayout>
+    		</FrameLayout>
+    	</TabHost>
+
+    </RelativeLayout>
+
+    
+
+    <!-- </RelativeLayout> -->
+
+    
+
+
+	<!-- My Logs -->
+
+
+
+</LinearLayout>
+
+</ScrollView>
